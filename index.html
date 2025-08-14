@@ -19,7 +19,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background: url('') no-repeat center center fixed;
       background-size: cover;
       position: relative;
     }
@@ -108,21 +108,35 @@
     <h2>ANIIMS FAMILY</h2>
 
     <div class="button-container">
-      <button class="neumorphic-button" onclick="handleClick('Start 1')">Start 1</button>
+      <button class="neumorphic-button" onclick="handleClick('Start 1')">VISUAL ANIIMS</button>
     </div>
     <div class="button-container">
-      <button class="neumorphic-button" onclick="handleClick('Start 1')">Start 1</button>
+      <button class="neumorphic-button" onclick="handleClick('Start 1')">8D ANIIMS</button>
+    </div>
+    <div class="button-container">
+      <button class="neumorphic-button" onclick="handleClick('Start 1')">ANIIMS DESIGN</button>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 ANIIMS FAMILY. Crafted with care.
+    &copy; 2025 ANIIMS FAMILY. All rights reserved.
   </footer>
 
   <script>
-    function handleClick(action) {
-      alert(action + ' clicked!');
+    function handleClick(label) {
+      if (label === 'Start 1') {
+        window.open('https://shamalmilinda.github.io/8DANIIMS.github.io/'); // Opens in new tab
+      }
+      else if (label === 'Start 2') 
+      {
+        window.open('https://shamalmilinda.github.io/8DANIIMS.github.io/'); // Opens in new tab
+      } 
+      else if (label === 'Start 3') 
+      {
+        window.open('https://shamalmilinda.github.io/8DANIIMS.github.io/'); // Opens in new tab
+      }
     }
+
   </script>
 
 </body>

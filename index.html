@@ -2,28 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANIIMS FAMILY</title>
   <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      background-color: #e0e0e0;
       font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-between;
-      height: 100vh;
-      margin: 0;
+      align-items: center;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Overlay for readability */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(224, 224, 224, 0.85);
+      z-index: 0;
+    }
+
+    main, footer {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
     }
 
     h2 {
-      margin-top: 40px;
+      margin: 40px 0 30px;
       color: #333;
+      font-size: 2rem;
     }
 
     .button-container {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .neumorphic-button {
@@ -37,6 +68,7 @@
       color: #333;
       cursor: pointer;
       transition: all 0.2s ease;
+      min-width: 120px;
     }
 
     .neumorphic-button:active {
@@ -49,27 +81,39 @@
     }
 
     footer {
-      width: 100%;
-      text-align: center;
-      padding: 15px 0;
-      background-color: #d6d6d6;
+      background-color: rgba(214, 214, 214, 0.9);
       box-shadow: inset 2px 2px 5px #bebebe,
                   inset -2px -2px 5px #ffffff;
       font-size: 14px;
       color: #555;
+      padding: 15px;
+    }
+
+    /* Responsive typography */
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .neumorphic-button {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h2>ANIIMS FAMILY</h2>
+  <main>
+    <h2>ANIIMS FAMILY</h2>
 
-  <div class="button-container">
-    <button class="neumorphic-button" onclick="handleClick('Start 1')">Start 1</button>
-  </div>
-  <div class="button-container">
-    <button class="neumorphic-button" onclick="handleClick('Start 2')">Start 2</button>
-  </div>
+    <div class="button-container">
+      <button class="neumorphic-button" onclick="handleClick('Start 1')">Start 1</button>
+    </div>
+    <div class="button-container">
+      <button class="neumorphic-button" onclick="handleClick('Start 1')">Start 1</button>
+    </div>
+  </main>
 
   <footer>
     &copy; 2025 ANIIMS FAMILY. Crafted with care.

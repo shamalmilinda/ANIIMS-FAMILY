@@ -510,6 +510,71 @@
       border:2px solid rgba(0,208,255,0.4);
     }
 
+/* =========================
+SECTION
+========================= */
+
+section{
+  padding:90px 7%;
+}
+
+.section-title{
+  font-size:45px;
+  text-align:center;
+  margin-bottom:15px;
+  font-weight:800;
+}
+
+.section-desc{
+  text-align:center;
+  color:#b9b9b9;
+  margin-bottom:60px;
+  font-size:18px;
+}
+
+/* =========================
+FOUNDERS
+========================= */
+
+.founders{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.founder-card{
+  background:rgba(255,255,255,0.05);
+  border-radius:25px;
+  padding:40px 30px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s;
+}
+
+.founder-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 25px rgba(0,255,255,0.15);
+}
+
+.founder-card img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:20px;
+  border:4px solid rgba(0,229,255,0.4);
+}
+
+.founder-card h3{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.founder-card span{
+  color:#00e5ff;
+  font-weight:600;
+}
+
     /* =========================
     FOOTER
     ========================= */
@@ -789,7 +854,7 @@
 
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="https://shamalmilinda.github.io/8DANIIMS.github.io/" class="nav-link">8D Aniims</a></li>
-            <li><a href="under repiar.html" class="nav-link">Visual Aniims</a></li>
+            <li><a href="https://shamalmilinda.github.io/VISUAL-ANIIMS/" class="nav-link">Visual Aniims</a></li>
             <li><a href="https://shamalmilinda.github.io/ANTIVISUAL-ENGINE/" class="nav-link">AI Aniims</a></li>
             <!--<li><a href="under repiar.html" class="nav-link">Contact</a></li>-->
 
@@ -921,6 +986,38 @@
 
   </section>
 
+<!-- FOUNDERS -->
+
+<section id="founders">
+
+  <h2 class="section-title">FOUNDERS</h2>
+
+  <p class="section-desc">
+    The creative minds behind <b>ANIIMS FAMILY</b>
+  </p>
+
+  <div class="founders">
+
+    <div class="founder-card">
+      <img src="shamal.jpg" alt="">
+
+      <h3>Shamal Punchihewa</h3>
+
+      <span>Founder</span>
+    </div>
+
+    <div class="founder-card">
+      <img src="" alt="">
+
+      <h3>Roshan Punchihewa</h3>
+
+      <span>Founder</span>
+    </div>
+
+  </div>
+
+</section>
+
   <!-- =========================
   FOOTER
   ========================= -->
@@ -941,7 +1038,7 @@
 
             <p>
 
-              Founder of Shamal Punchihewa & Roshan Punchihewa.
+              Day Dreamer Night Thinker.
 
             </p>
 
